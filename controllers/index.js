@@ -18,6 +18,16 @@ var regex = /^[A-Z a-z]+$/;
 var result = regex.test('nguyen van a');
 console.log(result);
 
+document.getElementById('btnClearInfo').onclick = function(){
+    document.querySelector('#taiKhoan').value = ''
+    document.querySelector('#hoVaTen').value = ''
+    document.querySelector('#email').value = ''
+    document.querySelector('#matKhau').value = ''
+    document.querySelector('#ngayLam').value = ''
+    document.querySelector('#luongCoBan').value = ''
+    document.querySelector('#chucVu').value = 'Chọn chức vụ'
+    document.querySelector('#gioLam').value = ''
+}
 
 document.getElementById('btnThemNV').onclick = function () {
 
