@@ -114,7 +114,9 @@ function layThongTin(TKNhanVienClick) {
     // tắt input#taiKhoan button#btnThemNV và mở button#btnCapNhat
     document.getElementById('taiKhoan').disabled = true;
     document.getElementById('btnThemNV').disabled = true;
+    document.getElementById('btnClearInfo').disabled = true;
     document.getElementById('btnCapNhat').disabled = false;
+
     // Tắt tất cả các thẻ span thông báo lỗi trước tránh lưu của cái cũ
     tatThongBaoValidation();
 
@@ -245,6 +247,7 @@ layStore();
 // Tắt nút cập nhật ban đầu
 document.getElementById('btnThem').onclick = function () {
     document.getElementById('btnThemNV').disabled = false;
+    document.getElementById('btnClearInfo').disabled = false;
     document.getElementById('btnCapNhat').disabled = true;
     document.getElementById('taiKhoan').disabled = false;
 }

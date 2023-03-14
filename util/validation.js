@@ -134,7 +134,7 @@ function Validation() {
             document.getElementById(idError).innerHTML = '';
             return true;
         }
-        document.getElementById(idError).innerHTML = `${name} không hợp lệ. Vui lòng chỉ nhập số. Tối đa trong tháng từ ${minLength} đến ${maxLength} !`
+        document.getElementById(idError).innerHTML = `${name} không hợp lệ. Vui lòng chỉ nhập số. Tối đa trong tháng từ ${minLength} đến ${maxLength} giờ !`
         document.getElementById(idError).style.display = 'block'
         return false;
     }
